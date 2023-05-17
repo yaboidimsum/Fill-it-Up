@@ -1,4 +1,6 @@
 # Fill-it-Up
+**Website is on air for <a href="https://yaboidimsum.github.io/Fill-it-Up/">Fill it up </a>**
+
 Fill it Up is a captivating and intellectually stimulating game designed to challenge the player's strategic prowess. The player's primary objective in this game is to achieve a remarkable feat - fill the entire grid with a single color. Allow me to elaborate on how this engaging endeavor unfolds. Throughout the gameplay, the player will encounter a grid consisting of numerous squares, awaiting the player's ingenious touch. With each turn, the player possesses the power to influence the color of the top-left square and all its interconnected counterparts. Two squares are deemed connected when they are adjacent to one another and share a common hue. By employing the player’s strategic acumen, the player can gradually propagate a harmonious transformation throughout the grid, as every square aligns itself with a uniform shade.
 
 ## Design
