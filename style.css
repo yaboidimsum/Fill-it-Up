@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #f3fafd;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+#grid {
+  border-collapse: collapse;
+  border: 2px solid #212121;
+}
+
+#grid td,
+#grid th {
+  padding: 0.25rem;
+  border: 0.25rem;
+}
+
+.Description {
+  font-size: large;
+  padding-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+#size {
+  width: 15em;
+}
+
+#reset-btn {
+  order: 1;
+}
+
+#palette {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  gap: 2.3rem;
+  padding-top: 1rem;
+}
+
+.palette-colour {
+  border: 2px solid #3333;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.outer {
+  position: relative;
+  height: 4rem;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
