@@ -22,3 +22,27 @@ The reason why the solve button is using greedy is because it means the player c
 This is the example of how the player can beat the game without reaching the moves needed.
 
 <img src="/image/player-play.jpg" alt="Alt text" title="Description of Fill it Up">
+
+## Implementation
+Here's a breakdown of the key components and functionality:
+
+### Variables
+The code initializes various variables such as ``grid_size``, ``turn``, ``grid``, ``original``, ``cells``, ``seen``, ``computing_mode``, ``computer_solution``, ``solver_mode``, ``solved``, ``solve_label``, and ``colours``. These variables store important data and settings for the game.
+
+### Functions
+- ``clear_seen()``: This function clears the seen grid, which keeps track of visited positions during the flooding process.
+- ``make_grid()``: This function starts a new game session by initializing and populating the game grid with random colors.
+- ``make_controls()``: This function creates the color-changing palette for the game.
+- ``update_turn(n)``: This function updates the turn text and counter.
+- ``reset()``: This function resets the game to its initial state, restoring the original grid and resetting the turn counter.
+- ``refresh()``: This function refreshes the game board with the current color configuration.
+- ``count_connected(i, j, c)``: This recursive function counts the number of cells connected to a given position (i, j) with the same color.
+- ``_flood(i, j, original, replace)``: This recursive helper function performs the flooding operation, changing the color of connected cells to a new color.
+- ``flood(c)``: This function initiates the flooding operation when a color is selected from the palette. It determines if the game is won by flooding the entire grid with the selected color.
+- ``inspect()``: This function inspects the grid and calculates the maximum number of cells that can be flooded by a single color.
+- ``floodMax()``: This function floods the grid with the color that has the maximum floodable cells, determined by the inspect() function.
+- ``computer_solve()``: This function simulates the computer's solution by automatically flooding cells until the entire grid is flooded. It returns the number of moves required for the computer to solve the puzzle.
+- ``solve()``: This function automatically solves the puzzle for the player by repeatedly calling floodMax() until the grid is completely flooded or the "Stop" button is clicked.
+
+### Event Listeners 
+The code includes event listeners for various elements such as palette colors, solve button, new game button, reset button, theme selection, and grid size selection. These listeners trigger the corresponding functions to handle user interactions and game logic.
