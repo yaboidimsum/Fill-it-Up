@@ -4,7 +4,11 @@ Fill it Up is a captivating and intellectually stimulating game designed to chal
 ## Design
 The design for this game is pretty simple, first the player will be greeted by an instruction on how the game works.
 
+<img src="/image/description.jpg" alt="Alt text" title="Description of Fill it Up">
+
 And then the player can see the square box full of random six generate color with counter on it and the theme of the square box
+
+<img src="/image/fillitup-box.jpg" alt="Alt text" title="Description of Fill it Up">
 
 Lastly, the player can see 4 different buttons 
 - ``Play``: Play the game
@@ -12,6 +16,9 @@ Lastly, the player can see 4 different buttons
 - ``Size``: To give the player challenge on how far the size of the grid the player can solved and beat the counter
 - ``Restart``: Restart the current box
 
-The reason why the solve button is using greedy is because it means the player can find the shortest path of the game so the counter is not always exactly how many moves there should be.
+<img src="/image/buttons.jpg" alt="Alt text" title="Description of Fill it Up">
 
+The reason why the solve button is using greedy is because it means the player can find the shortest path of the game so the counter is not always exactly how many moves there should be.
 This is the example of how the player can beat the game without reaching the moves needed.
+
+<img src="/image/player-play.jpg" alt="Alt text" title="Description of Fill it Up">
